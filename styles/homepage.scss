@@ -1,0 +1,191 @@
+@import "./colors.scss";
+
+p {
+  letter-spacing: 2px;
+}
+
+#homepage-carousel {
+  margin-top: 80px;
+}
+
+#homepage_content {
+  padding-top: 50px;
+  text-align: center;
+  .intro_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .homepage_title {
+    color: $primary;
+    border-bottom: 3px solid $primary;
+    padding-bottom: 20px;
+    &.title {
+      border: none;
+      padding-bottom: 0;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  }
+  .homepage_subtitle {
+    color: $primary;
+  }
+  .homepage_intro,
+  .area_intro,
+  .install_intro,
+  .blog_card_intro,
+  .company_intro {
+    text-indent: 2em;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+  .company_intro {
+    font-size: 1rem;
+  }
+
+  .card.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 350px;
+    border: 1.5px solid $primary;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    transition: 0.3s;
+    .card_img {
+      width: 85%;
+      transform: translateY(-5%);
+      transition: 0.3s;
+      &.img_2 {
+        width: unset;
+        height: 80%;
+      }
+    }
+    .card_img_overlay {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100%;
+      .card_title {
+        text-align: center;
+        color: $primary;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+    }
+
+    &:hover {
+      background-color: $primary;
+      .card_img {
+        transform: scale(1.5);
+        &.img-2 {
+          width: 70%;
+        }
+      }
+      .card_title {
+        color: $white;
+      }
+    }
+  }
+  .area_img,
+  .install_video_cover,
+  .blog_card_img {
+    width: 100%;
+  }
+  .area_intro,
+  .install_intro,
+  .blog_card_intro,
+  .company_intro {
+    text-align: left;
+  }
+  .area_link {
+    display: inline-block;
+    color: $primary;
+    text-decoration: none;
+    border: 1.5px solid $primary;
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+
+  .example_imgs {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    img.example {
+      flex-grow: 1;
+      width: calc(20% - 10px);
+    }
+  }
+  .more_link {
+    margin-top: 20px;
+    display: inline-block;
+    width: 50%;
+    color: $primary;
+    text-decoration: none;
+    border: 1.5px solid $primary;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  .blog_card_img {
+    border-radius: 5px;
+  }
+  .blog_card_title {
+    color: $primary;
+  }
+  .blog_intro_wrapper {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    word-break: break-word;
+    white-space: normal;
+    .blog_card_intro {
+      margin-bottom: 0px;
+    }
+  }
+  .related_page_link {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: $secondary;
+    .text {
+      flex-grow: 1;
+      .title {
+        letter-spacing: 2px;
+      }
+      .site {
+        font-size: 0.8rem;
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #homepage-carousel {
+    margin-top: 65px;
+  }
+  #homepage_content {
+    .homepage_subtitle {
+      padding-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .example_imgs {
+      img.example {
+        flex-grow: 1;
+        width: calc(50% - 10px);
+      }
+    }
+
+    .related_page_link {
+      width: 90%;
+    }
+  }
+}

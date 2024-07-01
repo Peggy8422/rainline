@@ -1,5 +1,6 @@
 // import './style.css'
 import "./styles/common-layout.scss";
+import "./styles/homepage.scss"
 
 // Vue data & cocmpomnents
 const companyBasicInfo = {
@@ -17,15 +18,19 @@ vm.component("my-footer", {
   },
   template: `
     <footer id="footer_block">
-      <div class="social_media_links">
-
+      <div class="social_media_links d-flex">
+          <div class="link_box d-inline-block"><img src="/images/icon/line.svg" alt="line" /></div>
+          <a class="link_box d-inline-block" href=""><img src="/images/icon/youtube.svg" alt="yoututbe" /></a>
+          <a class="link_box d-inline-block" href=""><img src="/images/icon/facebook.svg" alt="facebook" /></a>
       </div>
-      <div class="row company_footinfo">
-        <div class="col-sm-12"> 
-          <img class="company_logo" src="/images/icon/footer_company_logo.svg" alt="正在旺企業有限公司" />
-          <p class="company_intro_small">辦公室地址：{{ address }}</p>
-          <p class="company_intro_small">電話：{{ tel_number }} 傳真：{{ fax_number }}</p>
-          <p class="company_intro_small">信箱：{{ email }}</p>
+      <div class="container"> 
+        <div class="row company_footinfo pb-0">
+          <div class="col-sm-12"> 
+            <img class="company_logo" src="/images/icon/footer_company_logo.svg" alt="正在旺企業有限公司" />
+            <p class="company_intro_small">辦公室地址：{{ address }}</p>
+            <p class="company_intro_small">電話：{{ tel_number }} 傳真：{{ fax_number }}</p>
+            <p class="company_intro_small">信箱：{{ email }}</p>
+          </div>
         </div>
       </div>
       <div class="companydeco_box">
@@ -51,11 +56,13 @@ vm.component("my-footer", {
           </div>
         </div>
       </div>
-      <div class="row company_footinfo">
-        <div class="col-sm-12">
-          <p class="company_intro_small">台灣工廠生產，品質保證，安心合作，價格實惠，質量保證</p>
-          <p class="company_intro_small">提供客戶設計專屬LOGO，專屬顏色射出</p>
-        </div> 
+      <div class="container"> 
+        <div class="row company_footinfo">
+          <div class="col-sm-12">
+            <p class="company_intro_small">台灣工廠生產，品質保證，安心合作，價格實惠，質量保證</p>
+            <p class="company_intro_small">提供客戶設計專屬LOGO，專屬顏色射出</p>
+          </div> 
+        </div>
       </div>
     </footer>
       
