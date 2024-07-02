@@ -21,8 +21,23 @@ html, body {
   width: 100%;
 }
 
+p {
+  letter-spacing: 2px;
+}
 
+video.page_hero_video {
+  margin-top: 80px;
+  width: 100%;
+}
 
+@media screen and (max-width: 769px) {
+  p {
+    font-size: 0.8rem;
+  }
+  video.page_hero_video {
+    margin-top: 65px;
+  }
+}
 /* #app {
   max-width: 1280px;
   margin: 0 auto;

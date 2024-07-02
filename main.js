@@ -1,6 +1,8 @@
 // import './style.css'
 import "./styles/common-layout.scss";
-import "./styles/homepage.scss"
+import "./styles/homepage.scss";
+import "./styles/use.scss";
+import "./styles/rainline.scss";
 
 // Vue data & cocmpomnents
 const companyBasicInfo = {
@@ -76,7 +78,7 @@ vm.component("my-header", {
   template: `
     <nav id="nav_block" class="navbar navbar-expand-md fixed-top top_1">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <img
             class="d-inline-block align-text-top"
             src="/images/icon/products_brandicon.svg"
@@ -138,7 +140,7 @@ vm.component("my-header", {
             <li class="nav-item">
               <div class="nav-link" id="apply_areas">應用領域</div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="">使用方式</a></li>
+            <li class="nav-item"><a class="nav-link" href="/use.html">使用方式</a></li>
             <li class="nav-item"><a class="nav-link" href="">實績案例</a></li>
             <li class="nav-item">
               <a class="nav-link" href="">型錄資源與下載</a>

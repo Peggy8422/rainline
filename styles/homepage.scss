@@ -1,14 +1,10 @@
 @import "./colors.scss";
 
-p {
-  letter-spacing: 2px;
-}
-
 #homepage-carousel {
   margin-top: 80px;
 }
 
-#homepage_content {
+#page_content {
   padding-top: 50px;
   text-align: center;
   .intro_wrapper {
@@ -16,10 +12,11 @@ p {
     margin: 0 auto;
   }
 
-  .homepage_title {
+  .page_title {
     color: $primary;
     border-bottom: 3px solid $primary;
     padding-bottom: 20px;
+    letter-spacing: 2px;
     &.title {
       border: none;
       padding-bottom: 0;
@@ -27,20 +24,17 @@ p {
       margin-bottom: 20px;
     }
   }
-  .homepage_subtitle {
+  .page_subtitle {
     color: $primary;
   }
-  .homepage_intro,
+  .page_intro,
   .area_intro,
   .install_intro,
   .blog_card_intro,
   .company_intro {
     text-indent: 2em;
-    font-size: 0.9rem;
+    text-align: left;
     line-height: 1.8;
-  }
-  .company_intro {
-    font-size: 1rem;
   }
 
   .card.product {
@@ -95,12 +89,7 @@ p {
   .blog_card_img {
     width: 100%;
   }
-  .area_intro,
-  .install_intro,
-  .blog_card_intro,
-  .company_intro {
-    text-align: left;
-  }
+
   .area_link {
     display: inline-block;
     color: $primary;
@@ -108,6 +97,7 @@ p {
     border: 1.5px solid $primary;
     border-radius: 20px;
     padding: 5px 15px;
+    font-weight: 700;
   }
 
   .example_imgs {
@@ -128,6 +118,7 @@ p {
     border: 1.5px solid $primary;
     border-radius: 20px;
     padding: 5px;
+    font-weight: 700;
   }
 
   .blog_card_img {
@@ -171,8 +162,8 @@ p {
   #homepage-carousel {
     margin-top: 65px;
   }
-  #homepage_content {
-    .homepage_subtitle {
+  #page_content {
+    .page_subtitle {
       padding-bottom: 10px;
       font-size: 1rem;
     }
