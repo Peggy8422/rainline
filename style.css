@@ -21,20 +21,30 @@ html, body {
   width: 100%;
 }
 
+/* common global styles */
 p {
   letter-spacing: 2px;
 }
 
-video.page_hero_video {
+p.intro_in_block {
+  margin-bottom: 5px;
+  text-indent: 2em;
+  text-align: left;
+  line-height: 1.8;
+}
+
+video.page_hero_video,
+img.page_hero_img {
   margin-top: 80px;
   width: 100%;
 }
 
 @media screen and (max-width: 769px) {
-  p {
-    font-size: 0.8rem;
+  p.intro_in_block {
+    font-size: 0.8em;
   }
-  video.page_hero_video {
+  video.page_hero_video,
+  img.page_hero_img {
     margin-top: 65px;
   }
 }

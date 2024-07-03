@@ -2,7 +2,8 @@
 import "./styles/common-layout.scss";
 import "./styles/homepage.scss";
 import "./styles/use.scss";
-import "./styles/rainline.scss";
+import "./styles/rainline-rainpit.scss";
+import "./styles/areas.scss";
 
 // Vue data & cocmpomnents
 const companyBasicInfo = {
@@ -29,9 +30,9 @@ vm.component("my-footer", {
         <div class="row company_footinfo pb-0">
           <div class="col-sm-12"> 
             <img class="company_logo" src="/images/icon/footer_company_logo.svg" alt="正在旺企業有限公司" />
-            <p class="company_intro_small">辦公室地址：{{ address }}</p>
-            <p class="company_intro_small">電話：{{ tel_number }} 傳真：{{ fax_number }}</p>
-            <p class="company_intro_small">信箱：{{ email }}</p>
+            <p class="intro_in_block_small">辦公室地址：{{ address }}</p>
+            <p class="intro_in_block_small">電話：{{ tel_number }} 傳真：{{ fax_number }}</p>
+            <p class="intro_in_block_small">信箱：{{ email }}</p>
           </div>
         </div>
       </div>
@@ -61,8 +62,8 @@ vm.component("my-footer", {
       <div class="container"> 
         <div class="row company_footinfo">
           <div class="col-sm-12">
-            <p class="company_intro_small">台灣工廠生產，品質保證，安心合作，價格實惠，質量保證</p>
-            <p class="company_intro_small">提供客戶設計專屬LOGO，專屬顏色射出</p>
+            <p class="intro_in_block_small">台灣工廠生產，品質保證，安心合作，價格實惠，質量保證</p>
+            <p class="intro_in_block_small">提供客戶設計專屬LOGO，專屬顏色射出</p>
           </div> 
         </div>
       </div>
@@ -243,7 +244,7 @@ vm.component("my-header", {
         <h5 class="areas_menu_title">應用領域</h5>
         <div class="row">
           <div class="col-12 col-md-4">
-            <a class="area_item_link" href="">明溝排水</a>
+            <a class="area_item_link" href="/surface.html">明溝排水</a>
             <div class="d-flex">
               <ul class="area_list">
                 <li class="area_item">．人行通道</li>

@@ -179,6 +179,9 @@
 }
 #all_products_menu,
 #apply_areas_menu {
+  position: fixed;
+  background-color: $white;
+  z-index: 2;
   &.toggle {
     height: unset;
     opacity: 1;
@@ -225,7 +228,7 @@
       margin-bottom: 10px;
     }
 
-    .company_intro_small {
+    .intro_in_block_small {
       margin-bottom: 2px;
       color: $white;
       font-size: 0.8rem;
