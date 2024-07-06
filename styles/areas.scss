@@ -1,0 +1,21 @@
+@import "./colors.scss";
+
+#page_content {
+  .bdt_deco_line {
+    border-top: 2px solid $primary;
+  }
+
+  img.area_apply_img {
+    border-radius: 5px;
+  }
+
+  .page_title.area {
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+
+  img.resource_cover {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -1,6 +1,6 @@
 @import "./colors.scss";
 
-#homepage-carousel {
+#page-carousel {
   margin-top: 80px;
 }
 
@@ -94,6 +94,7 @@
     border-radius: 20px;
     padding: 5px 20px;
     font-weight: 700;
+    letter-spacing: 3px;
     transition: 0.3s;
     &:hover {
       background-color: $primary;
@@ -164,7 +165,7 @@
 }
 
 @media screen and (max-width: 769px) {
-  #homepage-carousel {
+  #page-carousel {
     margin-top: 65px;
   }
   #page_content {

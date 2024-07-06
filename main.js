@@ -264,7 +264,7 @@ vm.component("my-header", {
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <a class="area_item_link" href="">暗溝排水</a>
+            <a class="area_item_link" href="/blind.html">暗溝排水</a>
             <div class="d-flex">
               <ul class="area_list">
                 <li class="area_item">．戶外球場</li>
@@ -279,7 +279,7 @@ vm.component("my-header", {
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <a class="area_item_link" href="">屋頂與樓板</a>
+            <a class="area_item_link" href="/roof.html">屋頂與樓板</a>
             <div class="d-flex">
               <ul class="area_list">
                 <li class="area_item">．學校屋頂</li>
