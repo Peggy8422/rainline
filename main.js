@@ -171,7 +171,7 @@ vm.component("my-header", {
             <h5 class="products_menu_title">Rain Line PP截水溝</h5>
             <div class="products_menu_cocntent d-flex flex-wrap">
               <div>
-                <a class="rl_item_link" href="">RL 100</a>
+                <a class="rl_item_link" href="/rainline/rl100.html">RL 100</a>
                 <ul class="rl_list">
                   <li class="rl_item">．RL-1005</li>
                   <li class="rl_item">．RL-1010</li>
@@ -329,3 +329,15 @@ window.addEventListener("click", (e) => {
     areaInfoMenu.classList.remove("toggle");
   }
 });
+
+// UX functions
+function loadSketchfab(wrapperID,sflink){
+  var oldAnchor = document.querySelector(wrapperID + ' button');
+  if (oldAnchor){
+    oldAnchor.remove();
+  }
+
+  var sketchfab_container = document.querySelector(wrapperID);
+  sketchfab_container.innerHTML = '<iframe width="100%" height="500px" title="PP截水溝" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/' + sflink + '/embed?camera=0"> </iframe>';
+
+}

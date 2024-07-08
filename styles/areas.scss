@@ -1,6 +1,19 @@
 @import "./colors.scss";
 
 #page_content {
+  .area_page_links {
+    z-index: 5;
+    position: fixed;
+    top: 500px;
+    right: 5px;
+    // transform: translateX(105%);
+    gap: 10px;
+    a {
+      background-color: $white;
+      @include boxShadow(2px, 6px, 0.4)
+    }
+  }
+
   .bdt_deco_line {
     border-top: 2px solid $primary;
   }
@@ -18,4 +31,16 @@
     width: 80%;
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 769px) {
+  #page_content {
+    .area_page_links {
+      top: 200px;
+      gap: 2px;
+      a {
+        transform: scale(0.8);
+      }
+    }
+   }
 }
