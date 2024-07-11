@@ -181,7 +181,7 @@ vm.component("my-header", {
                 </ul>
               </div>
               <div>
-                <a class="rl_item_link" href="">RL 150</a>
+                <a class="rl_item_link" href="/rainline/rl150.html">RL 150</a>
                 <ul class="rl_list">
                   <li class="rl_item">．RL-1515</li>
                 </ul>
@@ -200,7 +200,7 @@ vm.component("my-header", {
             <h5 class="products_menu_title">Rain Pit 集水陰井</h5>
             <div class="products_menu_cocntent d-flex flex-wrap">
               <div>
-                <a class="rl_item_link" href="">小型陰井</a>
+                <a class="rl_item_link" href="/rainpit/rp2535h.html">小型陰井</a>
                 <ul class="rl_list">
                   <li class="rl_item">．RP-25</li>
                   <li class="rl_item">．RP-30</li>
@@ -209,7 +209,7 @@ vm.component("my-header", {
                 </ul>
               </div>
               <div>
-                <a class="rl_item_link" href="">中大型陰井</a>
+                <a class="rl_item_link" href="/rainpit/rp4671.html">中大型陰井</a>
                 <ul class="rl_list">
                   <li class="rl_item">．RP-46</li>
                   <li class="rl_item">．RP-56</li>
