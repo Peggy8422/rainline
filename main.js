@@ -187,7 +187,7 @@ vm.component("my-header", {
                 </ul>
               </div>
               <div>
-                <a class="rl_item_link" href="">相關配件</a>
+                <a class="rl_item_link" href="/rainline/rl-other.html">相關配件</a>
                 <ul class="rl_list">
                   <li class="rl_item">．萬向轉接頭</li>
                   <li class="rl_item">．線性陰井</li>
@@ -217,7 +217,7 @@ vm.component("my-header", {
                 </ul>
               </div>
               <div>
-                <a class="rl_item_link" href="">相關配件</a>
+                <a class="rl_item_link" href="/rainpit/rp-other.html">相關配件</a>
                 <ul class="rl_list">
                   <li class="rl_item">．加高器</li>
                   <li class="rl_item">．攔葉器</li>
@@ -225,7 +225,7 @@ vm.component("my-header", {
                 </ul>
               </div>
               <div>
-                <a class="rl_item_link" href="">落水頭</a>
+                <a class="rl_item_link" href="/rainpit/drainage.html">落水頭</a>
                 <ul class="rl_list">
                   <li class="rl_item">．平頭落水頭</li>
                   <li class="rl_item">．高腳落水頭</li>
