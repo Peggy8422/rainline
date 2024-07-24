@@ -9,9 +9,9 @@
     width: 100%;
     border-radius: 5px;
   }
-  .bdb_deco_line {
-    border-bottom: 2px solid $primary;
-  }
+}
+.bdb_deco_line {
+  border-bottom: 2px solid $primary;
 }
 
 @media screen and (max-width: 769px) {

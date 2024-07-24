@@ -4,6 +4,8 @@ import "./styles/homepage.scss";
 import "./styles/use.scss";
 import "./styles/rainline-rainpit.scss";
 import "./styles/areas.scss";
+import "./styles/performance.scss";
+import "./styles/downloads.scss";
 
 // Vue data & cocmpomnents
 const companyBasicInfo = {
@@ -22,9 +24,9 @@ vm.component("my-footer", {
   template: `
     <footer id="footer_block">
       <div class="social_media_links d-flex">
-          <div class="link_box d-inline-block"><img src="/images/icon/line.svg" alt="line" /></div>
-          <a class="link_box d-inline-block" href=""><img src="/images/icon/youtube.svg" alt="yoututbe" /></a>
-          <a class="link_box d-inline-block" href=""><img src="/images/icon/facebook.svg" alt="facebook" /></a>
+          <div class="link_box d-inline-block line"><img src="/images/icon/line.svg" alt="line" /></div>
+          <a class="link_box d-inline-block yt" href=""><img src="/images/icon/youtube.svg" alt="yoututbe" /></a>
+          <a class="link_box d-inline-block fb" href=""><img src="/images/icon/facebook.svg" alt="facebook" /></a>
       </div>
       <div class="container"> 
         <div class="row company_footinfo pb-0">
@@ -142,9 +144,9 @@ vm.component("my-header", {
               <div class="nav-link" id="apply_areas">應用領域</div>
             </li>
             <li class="nav-item"><a class="nav-link" href="/use.html">使用方式</a></li>
-            <li class="nav-item"><a class="nav-link" href="">實績案例</a></li>
+            <li class="nav-item"><a class="nav-link" href="/performance.html">實績案例</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="">型錄資源與下載</a>
+              <a class="nav-link" href="/downloads.html">型錄資源與下載</a>
             </li>
           </ul>
           <div class="d-md-none company_headinfo in_menu p-3 py-2">

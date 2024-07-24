@@ -1,0 +1,26 @@
+@import "./colors.scss";
+
+#page_content {
+  .download_sources_block {
+    .download_sources_imgs {
+      flex-wrap: wrap;
+      gap: 20px;
+      .download_sources_link {
+        display: block;
+        width: calc(25% - 15px);
+        text-decoration: none;
+        color: $secondary;
+        &.cad {
+          width: calc(50% - 10px);
+        }
+        img {
+          @include boxShadow(4px, 4px, 5px, 0.3)
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+
+}

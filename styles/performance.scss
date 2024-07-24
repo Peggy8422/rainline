@@ -1,0 +1,68 @@
+@import "./colors.scss";
+
+.container {
+  .case_imgs_block {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    .img_wrapper {
+      width: calc(100% / 3 - 10px);
+      flex-grow: 1;
+    }
+  }
+}
+.no_container_block {
+  border-top: 2px solid $primary;
+  border-bottom: 2px solid $primary;
+  .page_title {
+    color: $primary;
+    text-align: center;
+  }
+  .page_slogan {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+}
+
+.case_intro_block {
+  .case_intro_title {
+    color: $primary;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .case_intro_row {
+    flex-wrap: wrap;
+    gap: 20px;
+    .case_intro {
+      flex-grow: 1;
+      width: calc(100% / 3 - 20px);
+    }
+  }
+  .rwd_float_block {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .case_intro_block {
+    .rwd_float_block {
+      display: block;
+    }
+    .hide_block {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .case_intro_block {
+    .case_intro_row {
+      gap: 10px;
+      .case_intro {
+        flex-grow: 1;
+        width: calc(50% - 10px);
+      }
+    }
+  }
+}
