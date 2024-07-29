@@ -275,6 +275,16 @@
   }
 }
 
+// small common elements
+.btn_primary_outlined {
+  color: $primary;
+  border: 1px solid $primary;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
 @media screen and (max-width: 769px) {
   #nav_block {
     .navbar-brand {

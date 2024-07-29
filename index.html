@@ -133,7 +133,7 @@
             <p class="intro_in_block">
               截水溝於無乘載需求之低度通行區域等位置，在相關條件成立下，原則上可於安裝水溝完成時用原土回填後夯壓埋入即可，無須使用混凝土或其他材料固定PP預鑄水溝，是一種可快速施工並迅速收集地表水之材料之一。
             </p>
-            <a href="" class="area_link">領域展開</a>
+            <a href="/surface.html" class="area_link mt-3">領域展開</a>
           </div>
         </div>
         <div class="row mb-3">
@@ -152,7 +152,7 @@
             <p class="intro_in_block">
               PP預鑄截水溝用於暗溝施工時應於夯壓原土層後鋪設防沉陷網，鋪設後使用粗砂且加入適當水分壓實並以鏝刀或整平尺整平，如無特殊需求PP暗溝側邊均可以原有土壤回填後夯壓密實至溝頂後，依完成面需求使用原土繼續回填後鋪上瀝青或鋪設點焊鋼絲網後進行灌漿等後續工作。
             </p>
-            <a href="" class="area_link">領域展開</a>
+            <a href="/blind.html" class="area_link mt-3">領域展開</a>
           </div>
         </div>
         <div class="row mb-3">
@@ -172,7 +172,7 @@
               屋頂排水溝應於防水層施工完成後先行埋設，埋設後再開始後續隔熱及保護層等工項。
               我司所生產的PP截水溝添加各式加強助劑，具有耐高溫不翹區，抗UV不脆化，防鹽害不腐蝕等特性，非常適用於屋頂排水。
             </p>
-            <a href="" class="area_link">領域展開</a>
+            <a href="/roof.html" class="area_link mt-3">領域展開</a>
           </div>
         </div>
         <h4 class="page_title title">實績案例</h4>
@@ -228,16 +228,70 @@
             class="example"
           />
         </div>
-        <a href="" class="more_link">更多實績案例</a>
+        <a href="/performance.html" class="more_link">更多實績案例</a>
 
         <h4 class="page_title title">截水溝安裝影片</h4>
         <div class="row">
           <div class="col-12 col-md-7">
-            <img
-              class="install_video_cover"
-              src="/images/homepage/in_vedio.webp"
-              alt=""
-            />
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="video_trigger border-0"
+              data-bs-toggle="modal"
+              data-bs-target="#homepageInstallVideo"
+              onclick="openYTModal('#homepageInstallVideo','')"
+            >
+              <img
+                class="install_video_cover"
+                src="/images/homepage/in_vedio.webp"
+                alt=""
+              />
+              <img
+                class="yt_play_btn"
+                src="/images/icon/play_btn.png"
+                alt="YT播放鍵"
+              />
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="homepageInstallVideo"
+              tabindex="-1"
+              aria-labelledby="homepageInstallVideoLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="homepageInstallVideoLabel">
+                      PP截水溝 安裝說明
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      onclick="stopYT('#homeImplementV', '')"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-yt-container ratio ratio-16x9"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn_primary_outlined"
+                      data-bs-dismiss="modal"
+                      onclick="stopYT('#homeImplementV', '')"
+                    >
+                      關閉
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- <video class="install_video" src=""></video> -->
           </div>
           <div class="col-12 col-md-5">
@@ -313,7 +367,7 @@
             </div>
           </div>
         </div>
-        <a href="" class="more_link">更多使用方法</a>
+        <a href="/use.html" class="more_link">更多使用方法</a>
 
         <h4 class="page_title title">公司簡介</h4>
         <p class="intro_in_block">
@@ -331,7 +385,7 @@
         <h4 class="page_title title">友站連結</h4>
         <div class="row mb-5">
           <div class="col-12 col-md-4 mb-3">
-            <a class="related_page_link d-flex" href="">
+            <a class="related_page_link d-flex" href="https://www.coinn.com.tw/" target="_blank">
               <img
                 class="logo"
                 src="/images/icon/link_page_logo01.png"
@@ -344,7 +398,7 @@
             </a>
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <a class="related_page_link d-flex" href="">
+            <a class="related_page_link d-flex" href="https://rainsave.com.tw/index.html" target="_blank">
               <img
                 class="logo"
                 src="/images/icon/link_page_logo03.png"
@@ -357,7 +411,7 @@
             </a>
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <a class="related_page_link d-flex" href="">
+            <a class="related_page_link d-flex" href="/index.html">
               <img
                 class="logo"
                 src="/images/icon/link_page_logo02.png"
@@ -374,13 +428,15 @@
       <!-- <div style="height: 50px"></div> -->
       <my-footer></my-footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
+      defer
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" defer></script>
+    <script src="/global.js" defer></script>  
     <script type="module" src="/main.js"></script>
   </body>
 </html>

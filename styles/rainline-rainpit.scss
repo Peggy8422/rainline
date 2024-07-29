@@ -21,8 +21,13 @@
   .sketchfab-embed-wrapper {
     border: 1px solid $primary;
     border-radius: 20px;
-    // temp height
+    overflow: hidden;
+    // height?
     height: 500px;
+    &.small {
+      height: 40vw;
+      min-height: 450px;
+    }
   }
 
   .product_intro_block {

@@ -25,8 +25,8 @@ vm.component("my-footer", {
     <footer id="footer_block">
       <div class="social_media_links d-flex">
           <div class="link_box d-inline-block line"><img src="/images/icon/line.svg" alt="line" /></div>
-          <a class="link_box d-inline-block yt" href=""><img src="/images/icon/youtube.svg" alt="yoututbe" /></a>
-          <a class="link_box d-inline-block fb" href=""><img src="/images/icon/facebook.svg" alt="facebook" /></a>
+          <a class="link_box d-inline-block yt" href="https://www.youtube.com/@rainmaster6611" target="_blank"><img src="/images/icon/youtube.svg" alt="yoututbe" /></a>
+          <a class="link_box d-inline-block fb" href="https://www.facebook.com/rainmaster.tw" target="_blank"><img src="/images/icon/facebook.svg" alt="facebook" /></a>
       </div>
       <div class="container"> 
         <div class="row company_footinfo pb-0">
@@ -331,15 +331,3 @@ window.addEventListener("click", (e) => {
     areaInfoMenu.classList.remove("toggle");
   }
 });
-
-// UX functions
-function loadSketchfab(wrapperID,sflink){
-  var oldAnchor = document.querySelector(wrapperID + ' button');
-  if (oldAnchor){
-    oldAnchor.remove();
-  }
-
-  var sketchfab_container = document.querySelector(wrapperID);
-  sketchfab_container.innerHTML = '<iframe width="100%" height="500px" title="PP截水溝" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/' + sflink + '/embed?camera=0"> </iframe>';
-
-}

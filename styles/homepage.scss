@@ -164,6 +164,22 @@
       }
     }
   }
+  .video_trigger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .yt_play_btn {
+      position: absolute;
+      width: 10%;
+      min-width: 30px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  
 }
 
 @media screen and (max-width: 769px) {
