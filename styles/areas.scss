@@ -44,3 +44,16 @@
     }
    }
 }
+
+@media screen and (max-width: 420px) {
+  #page_content {
+    .area_page_links {
+      top: 150px;
+      gap: 1px;
+      a {
+        padding: 3px 15px;
+      }
+    }
+   }
+}
+

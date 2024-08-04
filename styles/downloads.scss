@@ -14,7 +14,7 @@
           width: calc(50% - 10px);
         }
         img {
-          @include boxShadow(4px, 4px, 5px, 0.3)
+          @include boxShadow(4px, 4px, 5px, 0.3);
         }
       }
     }
@@ -22,5 +22,14 @@
 }
 
 @media screen and (max-width: 769px) {
-
+  #page_content {
+    .download_sources_block {
+      .download_sources_imgs {
+        gap: 10px;
+        .download_sources_link {
+          width: calc(50% - 5px);
+        }
+      }
+    }
+  }
 }
