@@ -108,18 +108,72 @@
             </div>
           </div>
           <div class="d-flex justify-content-center mt-3">
-            <a class="area_link mx-3" href="/rainline/rl100.html#rl-1005"> > RL1005</a>
+            <a class="area_link mx-3" href="/rainline/rl100.html#rl-1005">
+              > RL1005</a
+            >
           </div>
         </div>
         <div class="py-5 bdb_deco_line">
           <div class="row">
             <div class="col-12">
               <h5 class="page_title title area">屋頂安裝線型排水溝影片</h5>
-              <img
-                class="resource_cover d-block"
-                src="/images/roof/video_roof_01.webp"
-                alt="屋頂安裝線型溝影片"
-              />
+              <button
+                type="button"
+                class="video_trigger border-0"
+                data-bs-toggle="modal"
+                data-bs-target="#roofInstallVideo"
+                onclick="openYTModal('#roofInstallVideo','e31fC0xJVms?si=KkN5xIY1Glz-aYFz')"
+              >
+                <img
+                  class="resource_cover d-block"
+                  src="/images/roof/video_roof_01.webp"
+                  alt="屋頂安裝線型溝影片"
+                />
+                <img
+                  class="yt_play_btn"
+                  src="/images/icon/play_btn.png"
+                  alt="YT播放鍵"
+                />
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="roofInstallVideo"
+                tabindex="-1"
+                aria-labelledby="roofInstallVideoLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="roofInstallVideoLabel">
+                        屋頂安裝線型排水溝 安裝說明
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        onclick="stopYT('#roofInstallVideo', 'e31fC0xJVms?si=KkN5xIY1Glz-aYFz')"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-yt-container ratio ratio-16x9"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn_primary_outlined"
+                        data-bs-dismiss="modal"
+                        onclick="stopYT('#roofInstallVideo', 'e31fC0xJVms?si=KkN5xIY1Glz-aYFz')"
+                      >
+                        關閉
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -133,6 +187,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="/global.js" defer></script> 
     <script type="module" src="/main.js"></script>
   </body>
 </html>
