@@ -4,6 +4,12 @@
   margin-top: 80px;
 }
 
+@mixin title-under-page-top {
+  border: none;
+  padding-bottom: 0;
+  margin-top: 50px;
+}
+
 #page_content {
   padding-top: 50px;
   text-align: center;
@@ -16,17 +22,23 @@
   .page_title {
     color: $primary;
     border-bottom: 3px solid $primary;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    font-size: $page-top-title-size;
     letter-spacing: 2px;
-    &.title {
-      border: none;
-      padding-bottom: 0;
-      margin-top: 50px;
-      margin-bottom: 20px;
+    &.big_title {
+      @include title-under-page-top;
+      font-size: $big-title-size;
+      // margin-bottom: 24px;
+    }
+    &.medium_title {
+      @include title-under-page-top;
+      font-size: $medium-title-size;
     }
   }
   .page_subtitle {
     color: $primary;
+    font-size: $small-title-size;
   }
   // .intro_in_block {
   //   text-indent: 2em;
@@ -133,7 +145,9 @@
     border-radius: 5px;
   }
   .blog_card_title {
+    margin-top: 40px;
     color: $primary;
+    font-size: $small-title-size;
   }
   .blog_intro_wrapper {
     display: -webkit-box;
@@ -153,7 +167,7 @@
     height: 50px;
     margin: 0 auto;
     text-decoration: none;
-    color: $secondary;
+    color: $text-color-dark;
     .text {
       flex-grow: 1;
       .title {
@@ -179,7 +193,6 @@
       }
     }
   }
-  
 }
 
 @media screen and (max-width: 769px) {
@@ -188,7 +201,13 @@
   }
   #page_content {
     .page_title {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
+      &.big_title {
+        font-size: 1.5rem;
+      }
+      &.medium_title {
+        font-size: 1.2rem;
+      }
     }
     .page_subtitle {
       padding-bottom: 10px;
