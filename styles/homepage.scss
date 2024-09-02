@@ -34,6 +34,7 @@
     &.medium_title {
       @include title-under-page-top;
       font-size: $medium-title-size;
+      font-weight: 400;
     }
   }
   .page_subtitle {
