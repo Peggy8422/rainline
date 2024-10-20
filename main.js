@@ -6,6 +6,8 @@ import "./styles/rainline-rainpit.scss";
 import "./styles/areas.scss";
 import "./styles/performance.scss";
 import "./styles/downloads.scss";
+// lottie plugin
+import "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js";
 
 // Vue data & cocmpomnents
 const companyBasicInfo = {
@@ -76,7 +78,29 @@ vm.component("my-footer", {
 
 vm.component("my-header", {
   data() {
-    return companyBasicInfo;
+    return {
+      ...companyBasicInfo,
+      logo: "/images/icon/Vigor_Bonanza_logo(line).webp",
+      isShowingGreeting: false,
+    };
+  },
+  methods: {
+    toggleeLogoStyle() {
+      this.logo =
+        this.logo === "/images/icon/Vigor_Bonanza_logo(line).webp"
+          ? "/images/icon/Vigor_Bonanza_logo(img).webp"
+          : "/images/icon/Vigor_Bonanza_logo(line).webp";
+    },
+  },
+  mounted() {
+    bodymovin.loadAnimation({
+      container: document.getElementById('hello_animation'),
+      path: '/animation/hello_anime.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: "360 animation",
+    });
   },
   template: `
     <nav id="nav_block" class="navbar navbar-expand-md fixed-top top_1">
@@ -120,9 +144,14 @@ vm.component("my-header", {
         >
           <img
             class="company_logo_outline"
-            src="/images/icon/Vigor_Bonanza_logo(line).webp"
+            :src="logo"
             alt="正在旺企業有限公司"
+            @mouseover="toggleeLogoStyle"
+            @mouseout="toggleeLogoStyle"
+            @mousedown="isShowingGreeting = true"
+            @mouseup="isShowingGreeting = false"
           />
+          <div id="hello_animation" v-show="isShowingGreeting" class="hello_animation"></div> 
           <div class="company_headinfo">
             <div class="addr">地址：{{ address }}</div>
             <div class="tel_fax">

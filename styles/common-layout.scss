@@ -1,6 +1,7 @@
 @import "./colors.scss";
 
 p {
+  color: $text-color-dark;
   &.big_p {
     font-size: 24px;
   }
@@ -60,6 +61,12 @@ p {
   }
   .company_logo_outline {
     height: 35px;
+  }
+  .hello_animation {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
   }
 }
 #rainline_navlinks {
@@ -205,8 +212,10 @@ p {
 // }
 
 #footer_block {
+  height: 577px;
   position: relative;
-  margin-top: 100px;
+  margin-top: 120px;
+  padding-top: 100px;
   background-color: $primary;
   .social_media_links {
     justify-content: center;
@@ -236,6 +245,8 @@ p {
   .company_footinfo {
     position: relative;
     padding: 20px 0;
+    margin: 20px 0;
+    font-size: $small-title-size;
     > div {
       text-align: center;
       letter-spacing: 0.2rem;
@@ -249,12 +260,12 @@ p {
     .intro_in_block_small {
       margin-bottom: 2px;
       color: $white;
-      font-size: 0.8rem;
+      // font-size: 0.8rem;
     }
   }
   .companydeco_box {
     padding: 0.8rem 0;
-    margin: 0 50px;
+    margin: 0px 50px;
     background-color: $white-bgc;
     border-radius: 5rem;
     .logo_box {
@@ -362,6 +373,8 @@ p {
     }
   }
   #footer_block {
+    height: unset;
+    padding-top: 20px;
     .company_footinfo {
       .company_logo {
         height: 15%;

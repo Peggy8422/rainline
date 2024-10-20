@@ -94,6 +94,10 @@
       }
     }
   }
+  .with_white_bgc {
+    background-color: $white-grey;
+  }
+
   .area_img,
   .install_video_cover,
   .blog_card_img {
@@ -111,22 +115,35 @@
     letter-spacing: 3px;
     transition: 0.3s;
     &:hover {
-      background-color: $primary;
-      color: $white;
+      background-image: url("../public/images/icon/jump_area_btn.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      border: none;
+      transform: scale(1.2, 1.3);
+      color: transparent;
+      filter: drop-shadow($box-shadow);
     }
   }
 
   .example_imgs {
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     gap: 10px;
     img.example {
       flex-grow: 1;
       width: calc(20% - 10px);
     }
   }
+  .using-ways {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .more_link {
     margin-top: 20px;
+    margin-bottom: 60px;
     display: inline-block;
     width: 50%;
     color: $primary;
