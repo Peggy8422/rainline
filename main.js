@@ -88,7 +88,7 @@ vm.component("my-header", {
     toggleeLogoStyle() {
       this.logo =
         this.logo === "/images/icon/Vigor_Bonanza_logo(line).webp"
-          ? "/images/icon/Vigor_Bonanza_logo(img).webp"
+          ? "/images/icon/Vigor_Bonanza_logo(img)_hello.webp"
           : "/images/icon/Vigor_Bonanza_logo(line).webp";
     },
   },
