@@ -32,6 +32,7 @@
 
   .product_intro_block {
     position: relative;
+    margin-top: 104px;
     .outline_img_wrapper {
       border: 1px solid $primary;
       border-radius: 20px;
@@ -47,7 +48,7 @@
     .product_intro_content {
       text-align: left;
       padding: 20px 10px;
-  
+
       .type_title {
         color: $primary;
         font-weight: 700;
@@ -99,17 +100,40 @@
       display: inline-block;
       margin-top: 30px;
     }
+
+    &.with_padding {
+      margin: unset;
+      padding: 80px 0;
+      .product_links_block {
+        margin-bottom: 96px;
+      }
+    }
+  }
+
+  // extra styles
+  .medium_title_margin {
+    margin-bottom: 40px;
+  }
+  .link_title_margin {
+    margin-bottom: 32px;
   }
 }
 
 @media screen and (max-width: 769px) {
   #page_content {
     .product_intro_block {
+      margin-top: 64px;
       .product_links_block,
       .only_type_size {
         position: relative;
       }
-
+    }
+    // extra styles
+    .medium_title_margin {
+      margin-bottom: 24px;
+    }
+    .link_title_margin {
+      margin-bottom: 14px;
     }
   }
 }

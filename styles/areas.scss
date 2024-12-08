@@ -25,11 +25,16 @@
   .page_title.area {
     margin-top: 20px;
     line-height: 1.5;
+    text-decoration: underline;
   }
 
   .resource_cover {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .area_links_row {
+    margin-top: 40px;
   }
 }
 

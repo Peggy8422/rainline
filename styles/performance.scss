@@ -4,19 +4,23 @@
   .case_imgs_block {
     flex-wrap: wrap;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
+    margin-top: 80px;
     .img_wrapper {
-      width: calc(100% / 3 - 10px);
+      width: calc(100% / 3 - 20px);
       flex-grow: 1;
     }
   }
 }
 .no_container_block {
+  padding: 40px 0;
+  margin: 80px 0;
   border-top: 2px solid $primary;
   border-bottom: 2px solid $primary;
   .page_title {
     color: $primary;
     text-align: center;
+    font-size: $page-top-title-size;
   }
   .page_slogan {
     text-align: center;
@@ -27,9 +31,12 @@
 
 .case_intro_block {
   .case_intro_title {
+    margin-bottom: 40px;
     color: $primary;
     text-align: center;
     line-height: 1.5;
+    font-size: $small-title-size;
+    font-weight: normal;
   }
   .case_intro_row {
     flex-wrap: wrap;
@@ -45,6 +52,14 @@
 }
 
 @media screen and (max-width: 992px) {
+  .container {
+    .case_imgs_block {
+      gap: 10px;
+      .img_wrapper {
+        width: calc(100% / 3 - 10px);
+      }
+    }
+  }
   .case_intro_block {
     .rwd_float_block {
       display: block;
