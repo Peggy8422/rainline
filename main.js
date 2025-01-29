@@ -21,12 +21,30 @@ const companyBasicInfo = {
 const vm = Vue.createApp({});
 vm.component("my-footer", {
   data() {
-    return companyBasicInfo;
+    return { ...companyBasicInfo, showQrCode: false };
+  },
+  methods: {
+    openLineQRCode() {
+      this.showQrCode = true;
+    },
   },
   template: `
     <footer id="footer_block">
       <div class="social_media_links d-flex">
-          <div class="link_box d-inline-block line"><img src="/images/icon/line.svg" alt="line" /></div>
+          <div class="link_box d-inline-block line" @click="openLineQRCode"><img src="/images/icon/line.svg" alt="line" /></div>
+          <div class="line_qr_wrapper" v-if="showQrCode">
+            <button
+              type="button"
+              class="btn-close"
+              @click="showQrCode = false"
+            ></button>
+            <img 
+              class="line_qr"
+              src="/images/homepage/line_qrcode.jpg"
+              alt="蔡政家line"
+            />
+            <div>蔡政家 <br/> ID：0926777250</div>
+          </div>
           <a class="link_box d-inline-block yt" href="https://www.youtube.com/@rainmaster6611" target="_blank"><img src="/images/icon/youtube.svg" alt="yoututbe" /></a>
           <a class="link_box d-inline-block fb" href="https://www.facebook.com/rainmaster.tw" target="_blank"><img src="/images/icon/facebook.svg" alt="facebook" /></a>
       </div>
@@ -94,9 +112,9 @@ vm.component("my-header", {
   },
   mounted() {
     bodymovin.loadAnimation({
-      container: document.getElementById('hello_animation'),
-      path: '/animation/hello_anime.json',
-      renderer: 'svg',
+      container: document.getElementById("hello_animation"),
+      path: "/animation/hello_anime.json",
+      renderer: "svg",
       loop: true,
       autoplay: true,
       name: "360 animation",

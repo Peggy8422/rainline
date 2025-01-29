@@ -230,6 +230,7 @@ p {
       border-radius: 5px;
       &.line {
         background-color: $line-green;
+        cursor: pointer;
       }
       &.yt {
         background-color: $yt-red;
@@ -239,6 +240,24 @@ p {
       }
       img {
         height: 95%;
+      }
+    }
+    .line_qr_wrapper {
+      position: fixed;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      padding-bottom: 25px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      z-index: 10;
+      box-shadow: $box-shadow;
+      button.btn-close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
       }
     }
   }
